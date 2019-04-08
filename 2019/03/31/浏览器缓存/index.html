@@ -81,15 +81,15 @@
 
 <meta name="description" content="##一、Cookie1.来源Cookie 在计算机中是个存储在浏览器目录中的文本文件，当浏览器运行时，存储在 RAM 中发挥作用 （此种 Cookies 称作 Session Cookies），一旦用户从该网站或服务器退出，Cookie 可存储在用户本地的硬盘上 （此种 Cookies 称作 Persistent Cookies）。Cookie时效性：目前有些 Cookie 是临时的，有些则是持续">
 <meta property="og:type" content="article">
-<meta property="og:title" content="liumc&#39;s blog">
+<meta property="og:title" content="Myongchon&#39;s Home">
 <meta property="og:url" content="http://yoursite.com/2019/03/31/浏览器缓存/index.html">
-<meta property="og:site_name" content="liumc&#39;s blog">
+<meta property="og:site_name" content="Myongchon&#39;s Home">
 <meta property="og:description" content="##一、Cookie1.来源Cookie 在计算机中是个存储在浏览器目录中的文本文件，当浏览器运行时，存储在 RAM 中发挥作用 （此种 Cookies 称作 Session Cookies），一旦用户从该网站或服务器退出，Cookie 可存储在用户本地的硬盘上 （此种 Cookies 称作 Persistent Cookies）。Cookie时效性：目前有些 Cookie 是临时的，有些则是持续">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/16749538-8019d1f17bf73238.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:updated_time" content="2019-03-31T13:49:40.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="liumc&#39;s blog">
+<meta name="twitter:title" content="Myongchon&#39;s Home">
 <meta name="twitter:description" content="##一、Cookie1.来源Cookie 在计算机中是个存储在浏览器目录中的文本文件，当浏览器运行时，存储在 RAM 中发挥作用 （此种 Cookies 称作 Session Cookies），一旦用户从该网站或服务器退出，Cookie 可存储在用户本地的硬盘上 （此种 Cookies 称作 Persistent Cookies）。Cookie时效性：目前有些 Cookie 是临时的，有些则是持续">
 <meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/16749538-8019d1f17bf73238.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
@@ -127,7 +127,7 @@
 
 
 
-  <title> | liumc's blog</title>
+  <title> | Myongchon's Home</title>
   
 
 
@@ -157,7 +157,7 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">liumc's blog</span>
+        <span class="site-title">Myongchon's Home</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -237,13 +237,13 @@
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/31/浏览器缓存/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="liumc">
+      <meta itemprop="name" content="Myongchon">
       <meta itemprop="description" content>
       <meta itemprop="image" content="/images/blogLogo.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="liumc's blog">
+      <meta itemprop="name" content="Myongchon's Home">
     </span>
 
     
@@ -371,7 +371,9 @@
           
 
   
-
+  <div id="gitalk-container"></div>
+  
+   
 
 
         </div>
@@ -398,9 +400,9 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/blogLogo.png" alt="liumc">
+              <img class="site-author-image" itemprop="image" src="/images/blogLogo.png" alt="Myongchon">
             
-              <p class="site-author-name" itemprop="name">liumc</p>
+              <p class="site-author-name" itemprop="name">Myongchon</p>
               <p class="site-description motion-element" itemprop="description">Hi</p>
           </div>
 
@@ -456,7 +458,7 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">liumc</span>
+  <span class="author" itemprop="copyrightHolder">Myongchon</span>
 
   
 </div>
@@ -622,6 +624,21 @@
 
 
 
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: 'Client ID',
+          clientSecret: 'Client Secret',
+          repo: '�ֿ�����',
+          owner: 'github�ʺ�',
+          admin: ['github�ʺ�'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
   
 
