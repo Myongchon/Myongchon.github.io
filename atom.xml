@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Myongchon&#39;s Home</title>
+  <icon>https://www.gravatar.com/avatar/82bfac8f56523979f332334b3c0caad9</icon>
+  <subtitle>welcome</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-04-10T14:28:26.440Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Myongchon</name>
+    <email>Myongchon_Lau@hotmail.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>href与src的区别</title>
+    <link href="http://yoursite.com/2019/04/10/href%E4%B8%8Esrc%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://yoursite.com/2019/04/10/href与src的区别/</id>
+    <published>2019-04-10T14:25:17.000Z</published>
+    <updated>2019-04-10T14:28:26.440Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;###两者的定义&lt;br&gt;href (Hypertext Reference)指定网络资源的位置，从而在当前元素或者当前文档和由当前属性定义的需要的锚点或资源之间定义一个链接或者关系。当我们写下：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;tab
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>跨域请求</title>
+    <link href="http://yoursite.com/2019/04/07/%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/"/>
+    <id>http://yoursite.com/2019/04/07/跨域请求/</id>
+    <published>2019-04-07T09:49:57.000Z</published>
+    <updated>2019-04-07T09:51:17.964Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;一、什么是跨域？&lt;br&gt;1.什么是同源策略及其限制内容？&lt;br&gt;同源策略是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，浏览器很容易受到XSS、CSRF等攻击。所谓同源是指”协议+域名+端口”三者相同，即便两个不同的域名指向同一个ip地址，也非同源。&lt;/
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>用ES6定义一个react组件</title>
+    <link href="http://yoursite.com/2019/04/06/%E7%94%A8es6%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AAreact%E7%BB%84%E4%BB%B6/"/>
+    <id>http://yoursite.com/2019/04/06/用es6定义一个react组件/</id>
+    <published>2019-04-06T10:00:27.000Z</published>
+    <updated>2019-04-12T09:16:06.643Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="http://yoursite.com/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/04/04/webpack%E4%B8%8D%E5%90%8C%E7%8E%AF%E5%A2%83%E6%89%93%E5%8C%85/"/>
+    <id>http://yoursite.com/2019/04/04/webpack不同环境打包/</id>
+    <published>2019-04-04T03:30:04.422Z</published>
+    <updated>2019-04-04T03:30:04.650Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;###根据不同的环境打包（npm run build – xx)&lt;br&gt;1&amp;gt; build.js 文件添加&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/03/31/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98/"/>
+    <id>http://yoursite.com/2019/03/31/浏览器缓存/</id>
+    <published>2019-03-31T13:49:54.777Z</published>
+    <updated>2019-03-31T13:49:40.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;##一、Cookie&lt;br&gt;1.来源&lt;br&gt;Cookie 在计算机中是个存储在浏览器目录中的文本文件，当浏览器运行时，存储在 RAM 中发挥作用 （此种 Cookies 称作 Session Cookies），一旦用户从该网站或服务器退出，Cookie 可存储在用户本地的硬
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2019/03/31/hello-world/"/>
+    <id>http://yoursite.com/2019/03/31/hello-world/</id>
+    <published>2019-03-31T11:41:03.900Z</published>
+    <updated>2019-03-31T11:41:03.901Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
