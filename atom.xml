@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-22T08:43:49.417Z</updated>
+  <updated>2019-04-22T08:48:38.437Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>编码与解码</title>
+    <link href="http://yoursite.com/2019/04/12/%E7%BC%96%E7%A0%81%E4%B8%8E%E8%A7%A3%E7%A0%81/"/>
+    <id>http://yoursite.com/2019/04/12/编码与解码/</id>
+    <published>2019-04-12T10:05:26.878Z</published>
+    <updated>2019-04-22T08:48:38.437Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;strong&gt;编码函数：escape,encodeURI,encodeURIComponent&lt;br&gt;解码函数：unescape,decodeURI,decodeURIComponent&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;##实例&lt;/p&gt;
+&lt;h4 id=&quot;1、escape&quot;
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>href与src的区别</title>
@@ -36,21 +57,82 @@
   </entry>
   
   <entry>
-    <title></title>
-    <link href="http://yoursite.com/2019/04/04/webpack%E4%B8%8D%E5%90%8C%E7%8E%AF%E5%A2%83%E6%89%93%E5%8C%85/"/>
-    <id>http://yoursite.com/2019/04/04/webpack不同环境打包/</id>
-    <published>2019-04-04T03:30:04.422Z</published>
-    <updated>2019-04-04T03:30:04.650Z</updated>
+    <title>跨域请求</title>
+    <link href="http://yoursite.com/2019/04/07/%E8%B7%A8%E5%9F%9F%E8%AF%B7%E6%B1%82/"/>
+    <id>http://yoursite.com/2019/04/07/跨域请求/</id>
+    <published>2019-04-07T09:49:57.810Z</published>
+    <updated>2019-04-22T08:48:48.817Z</updated>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;###根据不同的环境打包（npm run build – xx)&lt;br&gt;1&amp;gt; build.js 文件添加&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class
+        &lt;p&gt;一、什么是跨域？&lt;br&gt;1.什么是同源策略及其限制内容？&lt;br&gt;同源策略是一种约定，它是浏览器最核心也最基本的安全功能，如果缺少了同源策略，浏览器很容易受到XSS、CSRF等攻击。所谓同源是指”协议+域名+端口”三者相同，即便两个不同的域名指向同一个ip地址，也非同源。&lt;/
       
     
     </summary>
     
+    
+  </entry>
+  
+  <entry>
+    <title>用ES6定义一个react组件</title>
+    <link href="http://yoursite.com/2019/04/06/%E7%94%A8es6%E5%AE%9A%E4%B9%89%E4%B8%80%E4%B8%AAreact%E7%BB%84%E4%BB%B6/"/>
+    <id>http://yoursite.com/2019/04/06/用es6定义一个react组件/</id>
+    <published>2019-04-06T10:00:08.159Z</published>
+    <updated>2019-04-22T08:49:15.947Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class
+      
+    
+    </summary>
+    
+    
+      <category term="React" scheme="http://yoursite.com/tags/React/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>根据不同的环境打包（npm run build -- xx)</title>
+    <link href="http://yoursite.com/2019/04/04/webpack%E4%B8%8D%E5%90%8C%E7%8E%AF%E5%A2%83%E6%89%93%E5%8C%85/"/>
+    <id>http://yoursite.com/2019/04/04/webpack不同环境打包/</id>
+    <published>2019-04-04T03:30:04.422Z</published>
+    <updated>2019-04-22T08:48:18.919Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;1&amp;gt; build.js 文件添加&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td c
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>浏览器缓存</title>
+    <link href="http://yoursite.com/2019/03/31/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98/"/>
+    <id>http://yoursite.com/2019/03/31/浏览器缓存/</id>
+    <published>2019-03-31T13:49:54.777Z</published>
+    <updated>2019-04-22T08:49:03.366Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;####Cookie&lt;br&gt;1.来源&lt;br&gt;Cookie 在计算机中是个存储在浏览器目录中的文本文件，当浏览器运行时，存储在 RAM 中发挥作用 （此种 Cookies 称作 Session Cookies），一旦用户从该网站或服务器退出，Cookie 可存储在用户本地的硬
+      
+    
+    </summary>
+    
+    
+      <category term="浏览器" scheme="http://yoursite.com/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
     
   </entry>
   
