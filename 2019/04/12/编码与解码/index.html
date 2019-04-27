@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  <title>编码与解码 | Myongchon&#39;s Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="编码函数：escape,encodeURI,encodeURIComponent解码函数：unescape,decodeURI,decodeURIComponent ##实例 1、escape()1234567&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;  document.write(escape(&amp;quot;Visit W3School!&amp;qu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="编码与解码">
+<meta property="og:url" content="http://yoursite.com/2019/04/12/编码与解码/index.html">
+<meta property="og:site_name" content="Myongchon&#39;s Home">
+<meta property="og:description" content="编码函数：escape,encodeURI,encodeURIComponent解码函数：unescape,decodeURI,decodeURIComponent ##实例 1、escape()1234567&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;  document.write(escape(&amp;quot;Visit W3School!&amp;qu">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-04-22T08:48:38.437Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="编码与解码">
+<meta name="twitter:description" content="编码函数：escape,encodeURI,encodeURIComponent解码函数：unescape,decodeURI,decodeURIComponent ##实例 1、escape()1234567&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;  document.write(escape(&amp;quot;Visit W3School!&amp;qu">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'> -->
+  <!-- <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css"> -->
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
+  <link href="//fonts.useso.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head></html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer" class="outer">
+    <a href="/" class="logo">Myongchon&#39;s Home</a>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/about/index.html">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        </div>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        
+        
+          <a id="nav-github-link" class="nav-icon" href="https://github.com/ppoffice/hexo-theme-alex" title="Fork me on GitHub"></a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+      <nav id="mobile-nav" class="off">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about/index.html" class="mobile-nav-link">About</a>
+  
+  <div id="search-form-wrap-mobile">
+    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+  </div>
+</nav>
+      <div class="outer">
+        
+          <aside id="sidebar">
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">April 2019</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">2</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/04/27/个人主页优化/">个人主页优化</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/12/编码与解码/">编码与解码</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/10/href与src的区别/">href与src的区别</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/07/跨域请求/">跨域请求</a>
+          </li>
+        
+          <li>
+            <a href="/2019/04/06/用es6定义一个react组件/">用ES6定义一个react组件</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/React/">React</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/浏览器/">浏览器</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/React/" style="font-size: 10px;">React</a> <a href="/tags/浏览器/" style="font-size: 10px;">浏览器</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">links</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://hexo.io">Hexo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+        <section id="main"><article id="post-编码与解码" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/04/12/编码与解码/" class="article-date">
+  <time datetime="2019-04-12T10:05:26.878Z" itemprop="datePublished">2019-04-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      编码与解码
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>编码函数：escape,encodeURI,encodeURIComponent<br>解码函数：unescape,decodeURI,decodeURIComponent</strong></p>
+<p>##实例</p>
+<h4 id="1、escape"><a href="#1、escape" class="headerlink" title="1、escape()"></a>1、escape()</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">  document.write(escape(&quot;Visit W3School!&quot;) + &quot;&lt;br /&gt;&quot;)</span><br><span class="line">  document.write(escape(&quot;?!=()#%&amp;&quot;))</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">输出结果：</span><br><span class="line">Visit%20W3School%21</span><br><span class="line">%3F%21%3D%28%29%23%25%26</span><br></pre></td></tr></table></figure>
+<h4 id="2、encodeURI"><a href="#2、encodeURI" class="headerlink" title="2、encodeURI()"></a>2、encodeURI()</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">document.write(encodeURI(&quot;http://www.w3school.com.cn&quot;)+ &quot;&lt;br /&gt;&quot;)</span><br><span class="line">document.write(encodeURI(&quot;http://www.w3school.com.cn/My first/&quot;)+ &quot;&lt;br /&gt;&quot;)</span><br><span class="line">document.write(encodeURI(&quot;,/?:@&amp;=+$#&quot;))</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br><span class="line">输出结果：</span><br><span class="line">http://www.w3school.com.cn</span><br><span class="line">http://www.w3school.com.cn/My%20first/</span><br><span class="line">,/?:@&amp;=+$#</span><br><span class="line">对整个URL进行编码，而URL的特定标识符不会被转码。</span><br></pre></td></tr></table></figure>
+<h4 id="3、encodeURIComponent"><a href="#3、encodeURIComponent" class="headerlink" title="3、encodeURIComponent()"></a>3、encodeURIComponent()</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">document.write(encodeURIComponent(&quot;http://www.w3school.com.cn&quot;))</span><br><span class="line">document.write(&quot;&lt;br /&gt;&quot;)</span><br><span class="line">document.write(encodeURIComponent(&quot;http://www.w3school.com.cn/p 1/&quot;))</span><br><span class="line">document.write(&quot;&lt;br /&gt;&quot;)</span><br><span class="line">document.write(encodeURIComponent(&quot;,/?:@&amp;=+$#&quot;))</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">输出结果：</span><br><span class="line">http%3A%2F%2Fwww.w3school.com.cn</span><br><span class="line">http%3A%2F%2Fwww.w3school.com.cn%2Fp%201%2F</span><br><span class="line">%2C%2F%3F%3A%40%26%3D%2B%24%23</span><br><span class="line">对URL中的参数进行编码，因为参数也是一个URL，如果不编码会影响整个URL的跳转。</span><br></pre></td></tr></table></figure>
+<h4 id="4、unescape"><a href="#4、unescape" class="headerlink" title="4、unescape()"></a>4、unescape()</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">var test1=&quot;Visit W3School!&quot;</span><br><span class="line">test1=escape(test1)</span><br><span class="line">document.write (test1 + &quot;&lt;br /&gt;&quot;)</span><br><span class="line">test1=unescape(test1)</span><br><span class="line">document.write(test1 + &quot;&lt;br /&gt;&quot;)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">输出：</span><br><span class="line">Visit%20W3School%21</span><br><span class="line">Visit W3School!</span><br></pre></td></tr></table></figure>
+<p>###5、decodeURI()<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">var test1=&quot;http://www.w3school.com.cn/My first/&quot;</span><br><span class="line">document.write(encodeURI(test1)+ &quot;&lt;br /&gt;&quot;)</span><br><span class="line">document.write(decodeURI(test1))</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">输出：</span><br><span class="line">http://www.w3school.com.cn/My%20first/</span><br><span class="line">http://www.w3school.com.cn/My first/</span><br></pre></td></tr></table></figure></p>
+<p>###5、decodeURIComponent()<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">var test1=&quot;http://www.w3school.com.cn/My first/&quot;</span><br><span class="line">document.write(encodeURIComponent(test1)+ &quot;&lt;br /&gt;&quot;)</span><br><span class="line">document.write(decodeURIComponent(test1))</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">输出：</span><br><span class="line">http%3A%2F%2Fwww.w3school.com.cn%2FMy%20first%2F</span><br><span class="line">http://www.w3school.com.cn/My first/</span><br></pre></td></tr></table></figure></p>
+<p><strong>参考：<a href="https://www.cnblogs.com/luckyuns/p/6396701.html" target="_blank" rel="noopener">js 中编码（encode）和解码（decode）的三种方法</a></strong></p>
+<hr>
+<p>escape()除了 ASCII 字母、数字和特定的符号外，对传进来的字符串全部进行转义编码，因此如果想对URL编码，最好不要使用此方法。而encodeURI() 用于编码整个URI,因为URI中的合法字符都不会被编码转换。encodeURIComponent方法在编码单个URIComponent（指请求参数）应当是最常用的，它可以讲参数中的中文、特殊字符进行转义，而不会影响整个URL。</p>
+<blockquote>
+<p>1、传递参数时需要使用encodeURIComponent，这样组合的url才不会被#等特殊字符截断。<br>例如：<script language="javascript">document.write(‘&lt;a href=”<a href="http://passport.baidu.com/?logout&amp;aid=7&amp;u=&#39;+encodeURIComponent(">http://passport.baidu.com/?logout&amp;aid=7&amp;u=’+encodeURIComponent(</a>“<a href="http://cang.baidu.com/bruce42">http://cang.baidu.com/bruce42</a>“)+’”&gt;退出</a>‘);</script></p>
+</blockquote>
+<blockquote>
+<p>2、进行url跳转时可以整体使用encodeURI<br>例如：Location.href=encodeURI(“<a href="http://cang.baidu.com/do/s?word=" target="_blank" rel="noopener">http://cang.baidu.com/do/s?word=</a>百度&amp;ct=21”);</p>
+</blockquote>
+<blockquote>
+<p>3、 js使用数据时可以使用escape<br>例如：搜藏中history纪录。</p>
+</blockquote>
+<blockquote>
+<p>4、escape对0-255以外的unicode值进行编码时输出%u<em>**</em>格式，其它情况下escape，encodeURI，encodeURIComponent编码结果相同。<br>最多使用的应为encodeURIComponent，它是将中文、韩文等特殊字符转换成utf-8格式的url编码，所以如果给后台传递参数需要使用encodeURIComponent时需要后台解码对utf-8支持（form中的编码方式和当前页面编码方式相同）<br>escape不编码字符有69个：<em>，+，-，.，/，@，_，0-9，a-z，A-Z<br>encodeURI不编码字符有82个：!，#，$，&amp;，’，(，)，</em>，+，,，-，.，/，:，;，=，?，@，<em>，~，0-9，a-z，A-Z<br>encodeURIComponent不编码字符有71个：!， ‘，(，)，</em>，-，.，*，~，0-9，a-z，A-Z</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/04/12/编码与解码/" data-id="cjuzlripd000b80ud8ew3ue7a" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2019/04/27/个人主页优化/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          个人主页优化
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2019/04/10/href与src的区别/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">href与src的区别</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <a href="/" class="logo">Myongchon&#39;s Home</a>
+      &copy; 2019 Myongchon<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.scrollLoading.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/miku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
