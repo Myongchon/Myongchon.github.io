@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-22T08:48:38.437Z</updated>
+  <updated>2019-04-27T12:31:06.291Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>个人主页优化</title>
+    <link href="http://yoursite.com/2019/04/27/%E4%B8%AA%E4%BA%BA%E4%B8%BB%E9%A1%B5%E4%BC%98%E5%8C%96/"/>
+    <id>http://yoursite.com/2019/04/27/个人主页优化/</id>
+    <published>2019-04-27T11:46:29.000Z</published>
+    <updated>2019-04-27T12:31:06.291Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;##1. 常用命令&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>编码与解码</title>
