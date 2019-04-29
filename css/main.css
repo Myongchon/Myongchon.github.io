@@ -1606,7 +1606,7 @@ pre .javascript .function {
 .posts-expand .post-eof {
   display: block;
   margin: 80px auto 60px;
-  width: 8%;
+  width: 20%;
   height: 1px;
   background: #ccc;
   text-align: center;
@@ -1844,7 +1844,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffff5d;
+  background: #dba183;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3012,9 +3012,20 @@ pre .javascript .function {
     text-align: justify;
   }
 }
-* {
-  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword2.ico"), auto !important;
+.post {
+  margin-top: 0px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
 }
-:active {
-  cursor: url("http://om8u46rmb.bkt.clouddn.com/sword1.ico"), auto !important;
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+  border-bottom: 1px solid #0593d3;
+}
+.post-body p a:hover {
+  color: #fc6423;
+  border-bottom: none;
+  border-bottom: 1px solid #fc6423;
 }
