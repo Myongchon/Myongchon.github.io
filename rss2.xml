@@ -8,8 +8,27 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>前端code playee</description>
-    <pubDate>Sun, 28 Apr 2019 08:33:06 GMT</pubDate>
+    <pubDate>Mon, 29 Apr 2019 06:58:42 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Web Worker</title>
+      <link>https://Myongchon.github.io/2019/04/29/eb-Worker/</link>
+      <guid>https://Myongchon.github.io/2019/04/29/eb-Worker/</guid>
+      <pubDate>Mon, 29 Apr 2019 06:52:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;p&gt;HTML5引进了 Web Worker，可让JS在后台运行，执行耗时长的任务，而不影响主页面代码的执行。&lt;br&gt;&lt;br&gt;1.定义：Web Worker 是HTML5标准的一部分，允许一段JavaScript程序运行在主线程之外的另外一个线程中。Web Worker 规范中定
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>HTML5引进了 Web Worker，可让JS在后台运行，执行耗时长的任务，而不影响主页面代码的执行。<br><br>1.定义：Web Worker 是HTML5标准的一部分，允许一段JavaScript程序运行在主线程之外的另外一个线程中。Web Worker 规范中定义了两类工作线程，分别是专用线程Dedicated Worker和共享线程 Shared Worker，其中，Dedicated Worker只能为一个页面所使用，而Shared Worker可以被多个页面所共享，本文以前者为例。</p>]]></content:encoded>
+      
+      <comments>https://Myongchon.github.io/2019/04/29/eb-Worker/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>盒子模型</title>
