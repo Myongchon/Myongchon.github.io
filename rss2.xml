@@ -8,8 +8,27 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Giser转型中</description>
-    <pubDate>Thu, 01 Aug 2019 14:29:47 GMT</pubDate>
+    <pubDate>Tue, 13 Aug 2019 16:44:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>JavaScript执行机制</title>
+      <link>https://Myongchon.github.io/2019/08/13/JavaScript%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/</link>
+      <guid>https://Myongchon.github.io/2019/08/13/JavaScript%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/</guid>
+      <pubDate>Tue, 13 Aug 2019 14:20:57 GMT</pubDate>
+      <description>
+      
+        
+        
+          &lt;h6 id=&quot;1、场景分析&quot;&gt;&lt;a href=&quot;#1、场景分析&quot; class=&quot;headerlink&quot; title=&quot;1、场景分析&quot;&gt;&lt;/a&gt;1、场景分析&lt;/h6&gt;&lt;p&gt;&lt;/p&gt;&lt;p class=&quot;codepen&quot; data-height=&quot;265&quot; data-theme-id
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h6 id="1、场景分析"><a href="#1、场景分析" class="headerlink" title="1、场景分析"></a>1、场景分析</h6><p></p><p class="codepen" data-height="265" data-theme-id="dark" data-default-tab="js,result" data-user="myongchon" data-slug-hash="abodVQw" style="height: 265px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="abodVQw"><br><span>See the Pen <a href="https://codepen.io/myongchon/pen/abodVQw/" target="_blank" rel="noopener"></a></span></p><ul><li>执行结果：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//&quot;执行Promise&quot;</span><br><span class="line">//&quot;代码执行结束&quot;</span><br><span class="line">//&quot;执行then函数啦&quot;</span><br><span class="line">//&quot;定时器开始&quot;</span><br></pre></td></tr></table></figure></li></ul><h6 id="2、执行机制相关知识点"><a href="#2、执行机制相关知识点" class="headerlink" title="2、执行机制相关知识点"></a>2、执行机制相关知识点</h6><h6 id="2-1、关于javascript"><a href="#2-1、关于javascript" class="headerlink" title="2.1、关于javascript"></a>2.1、关于javascript</h6><blockquote><p>javascript是一门单线程语言，在最新的HTML5中提出了Web-Worker，但javascript是单线程这一核心仍未改变。所以一切javascript版的”多线程”都是用单线程模拟出来的。</p></blockquote><h6 id="2-2、javascript的同步和异步"><a href="#2-2、javascript的同步和异步" class="headerlink" title="2.2、javascript的同步和异步"></a>2.2、javascript的同步和异步</h6><blockquote><p>单线程就意味着，所有任务需要排队，前一个任务结束，才会执行后一个任务。如果前一个任务耗时很长，后一个任务就不得不一直等着。<br>如果排队是因为计算量大，CPU忙不过来，倒也算了，但是很多时候CPU是闲着的，因为IO设备（输入输出设备）很慢（比如Ajax操作从网络读取数据），不得不等着结果出来，再往下执行。<br>JavaScript语言的设计者意识到，这时主线程完全可以不管IO设备，挂起处于等待中的任务，先运行排在后面的任务。等到IO设备返回了结果，再回过头，把挂起的任务继续执行下去。<br>于是，所有任务可以分成两种，一种是同步任务（synchronous），另一种是异步任务（asynchronous）。同步任务指的是，在主线程上排队执行的任务，只有前一个任务执行完毕，才能执行后一个任务；异步任务指的是，不进入主线程、而进入”任务队列”（task queue）的任务，只有”任务队列”通知主线程，某个异步任务可以执行了，该任务才会进入主线程执行。</p></blockquote><p><img src="/2019/08/13/JavaScript执行机制/15fdd88994142347" alt="同步任务和异步任务"></p><blockquote><p>1、同步和异步任务分别进入不同的执行”场所”，同步的进入主线程，异步的进入Event Table并注册函数。<br>2、当Event Table中指定的事情完成时，会将这个函数移入Event Queue。<br>3、主线程内的任务执行完毕为空，会去Event Queue读取对应的函数，进入主线程执行。<br>4、上述过程会不断重复，也就是常说的Event Loop(事件循环)。<br>5、我们不禁要问了，那怎么知道主线程执行栈为空啊？js引擎存在monitoring process进程，会持续不断的检查主线程执行栈是否为空，一旦为空，就会去Event Queue那里检查是否有等待被调用的函数。</p></blockquote><h6 id="2-3、JavaScript的宏任务与微任务"><a href="#2-3、JavaScript的宏任务与微任务" class="headerlink" title="2.3、JavaScript的宏任务与微任务"></a>2.3、JavaScript的宏任务与微任务</h6><blockquote><p>你是否觉得同步异步的执行机制流程就是JavaScript执行机制的全部？不是的，JavaScript除了广义上的的同步任务何异步任务，其对任务还有更精细的定义：<br>macro-task(宏任务)：包括整体代码script，setTimeout，setInterval<br>micro-task(微任务)：Promise，process.nextTick<br>不同类型的任务会进入对应的Event Queue。<br>事件循环的顺序，决定js代码的执行顺序。进入整体代码(宏任务)后，开始第一次循环。接着执行所有的微任务。然后再次从宏任务开始，找到其中一个任务队列执行完毕，再执行所有的微任务。</p></blockquote><p><img src="/2019/08/13/JavaScript执行机制/12738399-2f2b5012410401b4.webp" alt="宏任务与微任务"></p>]]></content:encoded>
+      
+      <comments>https://Myongchon.github.io/2019/08/13/JavaScript%E6%89%A7%E8%A1%8C%E6%9C%BA%E5%88%B6/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>变量提升</title>
@@ -193,25 +212,6 @@
       <content:encoded><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content:encoded>
       
       <comments>https://Myongchon.github.io/2019/07/14/hello-world/#disqus_thread</comments>
-    </item>
-    
-    <item>
-      <title>href与src的区别</title>
-      <link>https://Myongchon.github.io/2019/07/14/href%E4%B8%8Esrc%E7%9A%84%E5%8C%BA%E5%88%AB/</link>
-      <guid>https://Myongchon.github.io/2019/07/14/href%E4%B8%8Esrc%E7%9A%84%E5%8C%BA%E5%88%AB/</guid>
-      <pubDate>Sat, 13 Jul 2019 18:33:19 GMT</pubDate>
-      <description>
-      
-        
-        
-          &lt;p&gt;###两者的定义&lt;br&gt;href (Hypertext Reference)指定网络资源的位置，从而在当前元素或者当前文档和由当前属性定义的需要的锚点或资源之间定义一个链接或者关系。当我们写下：&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;tab
-        
-      
-      </description>
-      
-      <content:encoded><![CDATA[<p>###两者的定义<br>href (Hypertext Reference)指定网络资源的位置，从而在当前元素或者当前文档和由当前属性定义的需要的锚点或资源之间定义一个链接或者关系。当我们写下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt; link href=&quot;style.css&quot; rel=&quot;stylesheet&quot; / &gt;</span><br></pre></td></tr></table></figure></p><p>浏览器明白当前资源是一个样式表，页面解析不会暂停（由于浏览器需要样式规则去画或者渲染页面，渲染过程可能会被被暂停）。这与把css文件内容写在<style>标签里不相同，因此建议使用link标签而不是@import来吧样式表导入到html文档里。<br>src (Source)属性仅仅 嵌入当前资源到当前文档元素定义的位置。当浏览器找到<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></p><p>在浏览器下载，编译，执行这个文件之前页面的加载和处理会被暂停。这个过程与把js文件放到<script>标签里类似。这也是建议把JS文件放到底部加载的原因。当然，img标签页与此类似。浏览器暂停加载直到提取和加载图像。</p><p>###两者区别<br>href和src是有区别的，而且是不能相互替换的。<br>(1)我们在可替换的元素*上使用src，然而把href用于在涉及的文档和外部资源之间建立一个链接或者关系。<br>(2)在浏览器下载，编译，执行src的值时，之前页面的加载和处理会被暂停；浏览器遇到href的值，页面解析不会暂停。</p><p>注，可替换元素：</p><blockquote><p>CSS 里，可替换元素（replaced element）的展现不是由CSS来控制的。这些元素是一类外观渲染独立于CSS的 外部对象。 典型的可替换元素有 &lt; img&gt;、 <object>、 <video> 和 表单元素，如<textarea>、 <input> 。 某些元素只在一些特殊情况下表现为可替换元素，例如 <audio> 和 <canvas> 。 通过 CSS content 属性来插入的对象 被称作 匿名可替换元素（anonymous replaced elements）。</p></blockquote></style></p>]]></content:encoded>
-      
-      <comments>https://Myongchon.github.io/2019/07/14/href%E4%B8%8Esrc%E7%9A%84%E5%8C%BA%E5%88%AB/#disqus_thread</comments>
     </item>
     
   </channel>
