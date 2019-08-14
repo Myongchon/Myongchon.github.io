@@ -88,7 +88,7 @@
 
 
 
-  <meta name="keywords" content="React,">
+  <meta name="keywords" content="Vue,">
 
 
 
@@ -101,18 +101,21 @@
 
 
 
-<meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;&amp;">
-<meta name="keywords" content="React">
+<meta name="description" content="单文件组件结构 命名：xx.vue位置：位于pages文件夹下一般来说，我们需要在单文件组件结构中定义那么几个标签  /8787263-6fb2238c101d48a7.webp)  ##地图显示功能1.全局安装vue1npm install -g vue-cli   2.创建项目1vue init webpack vue_leaflet 3.进入项目中12cd vue_leafletnpm st">
+<meta name="keywords" content="Vue">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用ES6定义一个react组件">
-<meta property="og:url" content="https://Myongchon.github.io/2019/07/14/用es6定义一个react组件/index.html">
+<meta property="og:title" content="vue-leaflet实践(1)">
+<meta property="og:url" content="https://Myongchon.github.io/2019/07/14/vue-leaflet实践(1)/index.html">
 <meta property="og:site_name" content="Myongchon的博客">
-<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;&amp;">
+<meta property="og:description" content="单文件组件结构 命名：xx.vue位置：位于pages文件夹下一般来说，我们需要在单文件组件结构中定义那么几个标签  /8787263-6fb2238c101d48a7.webp)  ##地图显示功能1.全局安装vue1npm install -g vue-cli   2.创建项目1vue init webpack vue_leaflet 3.进入项目中12cd vue_leafletnpm st">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-13T18:33:19.286Z">
+<meta property="og:image" content="https://myongchon.github.io/2019/07/14/vue-leaflet实践(1)/vue-leaflet实践(1">
+<meta property="og:image" content="https://myongchon.github.io/2019/07/14/vue-leaflet实践(1)/vue-leaflet实践(1">
+<meta property="og:updated_time" content="2019-08-14T12:07:50.776Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="用ES6定义一个react组件">
-<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152&amp;lt;!DOCTYPE html&amp;gt;&amp;lt;html&amp;gt;&amp;lt;head&amp;gt;    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;    &amp;lt;title&amp;gt;&amp;">
+<meta name="twitter:title" content="vue-leaflet实践(1)">
+<meta name="twitter:description" content="单文件组件结构 命名：xx.vue位置：位于pages文件夹下一般来说，我们需要在单文件组件结构中定义那么几个标签  /8787263-6fb2238c101d48a7.webp)  ##地图显示功能1.全局安装vue1npm install -g vue-cli   2.创建项目1vue init webpack vue_leaflet 3.进入项目中12cd vue_leafletnpm st">
+<meta name="twitter:image" content="https://myongchon.github.io/2019/07/14/vue-leaflet实践(1)/vue-leaflet实践(1">
 
 
 
@@ -142,13 +145,13 @@
 
 
 
-  <link rel="canonical" href="https://Myongchon.github.io/2019/07/14/用es6定义一个react组件/">
+  <link rel="canonical" href="https://Myongchon.github.io/2019/07/14/vue-leaflet实践(1)/">
 
 
 
 
 
-  <title>用ES6定义一个react组件 | Myongchon的博客</title>
+  <title>vue-leaflet实践(1) | Myongchon的博客</title>
   
 
 
@@ -336,7 +339,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://Myongchon.github.io/2019/07/14/用es6定义一个react组件/">
+    <link itemprop="mainEntityOfPage" href="https://Myongchon.github.io/2019/07/14/vue-leaflet实践(1)/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Myongchon">
@@ -353,7 +356,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">用ES6定义一个react组件</h1>
+          <h1 class="post-title" itemprop="name headline">vue-leaflet实践(1)</h1>
         
 
         <div class="post-meta">
@@ -402,7 +405,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  254
+                  526
                 </span>
               
 
@@ -427,7 +430,20 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">    &lt;script src=&quot;https://cdn.bootcss.com/react/16.4.0/umd/react.development.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=&quot;https://cdn.bootcss.com/react-dom/16.4.0/umd/react-dom.development.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">    &lt;script src=&quot;https://cdn.bootcss.com/babel-standalone/6.26.0/babel.min.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line"></span><br><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;div id=&quot;root&quot;&gt;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        &lt;h1&gt;</span><br><span class="line">            &lt;p&gt;姓名: &lt;/p&gt;</span><br><span class="line">            &lt;p&gt;年龄: &lt;/p&gt;</span><br><span class="line">        &lt;/h1&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br><span class="line"></span><br><span class="line">&lt;script type=&quot;text/babel&quot;&gt;</span><br><span class="line">    /**</span><br><span class="line">        * es6使用class的形式来创建组件,继承React的Component类,</span><br><span class="line">        * 后面我们更多的使用这种方式来创建组件</span><br><span class="line">     */ </span><br><span class="line">    class Welcome extends React.Component &#123;</span><br><span class="line">        constructor(props) &#123;</span><br><span class="line">            super(props);</span><br><span class="line">        &#125;</span><br><span class="line">        render() &#123;</span><br><span class="line">            return (</span><br><span class="line">                &lt;h1&gt;</span><br><span class="line">                    &lt;p&gt;姓名: &#123;this.props.person.name&#125;&lt;/p&gt;</span><br><span class="line">                    &lt;p&gt;年龄: &#123;this.props.person.age&#125; &lt;/p&gt;</span><br><span class="line">                &lt;/h1&gt;</span><br><span class="line">            )</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    const person = &#123;</span><br><span class="line">        name: &apos;huruqing&apos;,</span><br><span class="line">        age: 108</span><br><span class="line">    &#125;</span><br><span class="line">    ReactDOM.render(</span><br><span class="line">        &lt;Welcome person=&#123;person&#125; /&gt;,</span><br><span class="line">        document.getElementById(&apos;root&apos;)</span><br><span class="line">    )</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+        <h3 id="单文件组件结构"><a href="#单文件组件结构" class="headerlink" title="单文件组件结构"></a>单文件组件结构</h3><blockquote>
+<p>命名：xx.vue<br>位置：位于pages文件夹下<br>一般来说，我们需要在单文件组件结构中定义那么几个标签</p>
+</blockquote>
+<p><img src="/2019/07/14/vue-leaflet实践(1)/vue-leaflet实践(1" alt="单组件文件内容">/8787263-6fb2238c101d48a7.webp)</p>
+<ul>
+<li>##地图显示功能<br>1.全局安装vue<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g vue-cli</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>2.创建项目<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue init webpack vue_leaflet</span><br></pre></td></tr></table></figure></p>
+<p>3.进入项目中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd vue_leaflet</span><br><span class="line">npm start   //http://localhost:8080测试</span><br></pre></td></tr></table></figure></p>
+<p>4.安装leaflet<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install leaflet --save</span><br></pre></td></tr></table></figure></p>
+<p><strong>index.html</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;</span><br><span class="line">&lt;link href=&quot;//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot;&gt;</span><br><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://unpkg.com/leaflet@1.3.4/dist/leaflet.css&quot;/&gt;</span><br><span class="line">&lt;title&gt;test_bus_station&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div id=&quot;app&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;script src=&quot;https://unpkg.com/leaflet@1.3.4/dist/leaflet.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<p><strong>单文件（.vue）</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">&lt;div&gt;</span><br><span class="line">&lt;div id=&quot;mapid&quot;&gt;&lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script src=&quot;https://unpkg.com/leaflet@1.3.4/dist/leaflet.js&quot;&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">name: &apos;BusStation&apos;,</span><br><span class="line">data () &#123;</span><br><span class="line">return &#123;</span><br><span class="line">map: null</span><br><span class="line">&#125;</span><br><span class="line">&#125;,</span><br><span class="line">mounted () &#123;</span><br><span class="line">this.map = L.map(&apos;mapid&apos;).setView([36.49771311230842, 109.45744048529967], 13)</span><br><span class="line">// 加载谷歌地图</span><br><span class="line">L.tileLayer(&apos;http://mt0.google.cn/vt/lyrs=m@160000000&amp;hl=zh-CN&amp;gl=CN&amp;src=app&amp;y=&#123;y&#125;&amp;x=&#123;x&#125;&amp;z=&#123;z&#125;&amp;s=Ga&apos;, &#123;</span><br><span class="line">attribution: &apos;© &lt;a href=&quot;http://osm.org/copyright&quot;&gt;OpenStreetMap&lt;/a&gt; contributors&apos;</span><br><span class="line">&#125;).addTo(this.map)</span><br><span class="line">// 加载高德地图</span><br><span class="line">// L.tileLayer(&apos;http://webrd0&#123;s&#125;.is.autonavi.com/appmaptile?x=&#123;x&#125;&amp;y=&#123;y&#125;&amp;z=&#123;z&#125;&amp;lang=zh_cn&amp;size=1&amp;scale=1&amp;style=8&apos;, &#123;</span><br><span class="line">//   subdomains:&quot;1234&quot;</span><br><span class="line">// &#125;).addTo(this.map)&lt;br&gt;&lt;br&gt;    // 在地图上添加标记&lt;br&gt;    L.marker([data.lat, data.lng]).addTo(this.map)&lt;br&gt;    // 在地图上画圆圈&lt;br&gt;     L.circle([data.lat, data.lng], &#123;&lt;br&gt;           color: &apos;red&apos;,&lt;br&gt;           fillColor: &apos;#f03&apos;,&lt;br&gt;           fillOpacity: 0.5,&lt;br&gt;           radius: 3&lt;br&gt;        &#125;).addTo(this.map)&lt;br&gt;     &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;style scoped&gt;</span><br><span class="line">#mapid &#123; height: 1080px; &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure></p>
+<p><img src="/2019/07/14/vue-leaflet实践(1)/vue-leaflet实践(1" alt="显示效果">/16749538-a08a252cf1f5542e.png)</p>
 
       
     </div>
@@ -462,7 +478,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/React/" rel="tag"><i class="fa fa-tag"></i> React</a>
+            <a href="/tags/Vue/" rel="tag"><i class="fa fa-tag"></i> Vue</a>
           
         </div>
       
@@ -475,8 +491,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/14/编码与解码/" rel="next" title="编码与解码">
-                <i class="fa fa-chevron-left"></i> 编码与解码
+              <a href="/2019/07/14/webpack不同环境打包/" rel="next" title="根据不同的环境打包（npm run build -- xx)">
+                <i class="fa fa-chevron-left"></i> 根据不同的环境打包（npm run build -- xx)
               </a>
             
           </div>
@@ -485,8 +501,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/14/跨域请求/" rel="prev" title="跨域请求">
-                跨域请求 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/14/编码与解码/" rel="prev" title="编码与解码">
+                编码与解码 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -545,8 +561,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -585,7 +610,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -646,6 +671,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#单文件组件结构"><span class="nav-number">1.</span> <span class="nav-text">单文件组件结构</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -680,7 +721,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">11.3k</span>
+    <span title="Site words total count">11.6k</span>
   
 </div>
 
