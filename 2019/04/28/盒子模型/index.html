@@ -101,18 +101,20 @@
 
 
 
-<meta name="description" content="w3c盒模型与IE盒模型对比">
+<meta name="description" content="w3c盒模型与IE盒模型对比例：一个盒子的 margin 为 20px，border 为 1px，padding 为 10px，content 的宽为 200px、高为 50px，假如用标准 w3c 盒子模型解释，那么这个盒子需要占据的位置为：宽 202+12+102+200=262px、高 202+12102+50=112px，盒子的实际大小为：宽 12+102+200=222px、高 12+">
 <meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="盒子模型">
 <meta property="og:url" content="https://Myongchon.github.io/2019/04/28/盒子模型/index.html">
 <meta property="og:site_name" content="Myongchon的博客">
-<meta property="og:description" content="w3c盒模型与IE盒模型对比">
+<meta property="og:description" content="w3c盒模型与IE盒模型对比例：一个盒子的 margin 为 20px，border 为 1px，padding 为 10px，content 的宽为 200px、高为 50px，假如用标准 w3c 盒子模型解释，那么这个盒子需要占据的位置为：宽 202+12+102+200=262px、高 202+12102+50=112px，盒子的实际大小为：宽 12+102+200=222px、高 12+">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-13T18:33:19.286Z">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/16749538-3411a3c5d489d7d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:updated_time" content="2019-08-31T16:36:30.959Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="盒子模型">
-<meta name="twitter:description" content="w3c盒模型与IE盒模型对比">
+<meta name="twitter:description" content="w3c盒模型与IE盒模型对比例：一个盒子的 margin 为 20px，border 为 1px，padding 为 10px，content 的宽为 200px、高为 50px，假如用标准 w3c 盒子模型解释，那么这个盒子需要占据的位置为：宽 202+12+102+200=262px、高 202+12102+50=112px，盒子的实际大小为：宽 12+102+200=222px、高 12+">
+<meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/16749538-3411a3c5d489d7d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 
 
 
@@ -424,7 +426,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  10
+                  349
                 </span>
               
 
@@ -450,8 +452,14 @@
 
       
         <blockquote>
-<p>w3c盒模型与IE盒模型对比</p>
+<p>w3c盒模型与IE盒模型对比<br><img src="https://upload-images.jianshu.io/upload_images/16749538-3411a3c5d489d7d5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ie 盒子模型的 width/height 部分包含了 border 和 padding"><br>例：一个盒子的 margin 为 20px，border 为 1px，padding 为 10px，content 的宽为 200px、高为 50px，假如用标准 w3c 盒子模型解释，那么这个盒子需要占据的位置为：宽 202+12+102+200=262px、高 202+12102+50=112px，盒子的实际大小为：宽 12+102+200=222px、高 12+102+50=72px；假如用ie 盒子模型，那么这个盒子需要占据的位置为：宽 202+200=240px、高 20*2+50=70px，盒子的实际大小为：宽 200px、高 50px。在 CSS 中，width 和 height 指的是内容区域的宽度和高度。增加内边距、边框和外边距不会影响内容区域的尺寸，但是会增加元素框的总尺寸。<br>1、提示：背景应用于由内容和内边距、边框组成的区域。<br>2、提示：内边距、边框和外边距可以应用于一个元素的所有边，也可以应用于单独的边。<br>3、提示：外边距可以是负值，而且在很多情况下都要使用负值的外边距。</p>
 </blockquote>
+<p>####值缩写<br>下面的值缩写以 padding 为例。</p>
+<blockquote>
+<p>对面相等，后者省略；四面相等，只设一个。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">/*      四面值 */</span><br><span class="line">padding: 20px;</span><br><span class="line">padding: 20px 20px 20px 20px;</span><br><span class="line"></span><br><span class="line">/*      上下值 右左值 */</span><br><span class="line">padding: 20px   10px;</span><br><span class="line">padding: 20px 10px 20px 10px;</span><br><span class="line"></span><br><span class="line">/*       上值 右左值 下值 */</span><br><span class="line">padding: 20px 10px   30px;</span><br><span class="line">padding: 20px 10px 30px 10px;</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<hr>
+<p>参考<a href="https://www.jianshu.com/p/b7d94ec60136" target="_blank" rel="noopener">盒子模型的理解</a></p>
 
       
     </div>
@@ -587,7 +595,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">23</span>
+                  <span class="site-state-item-count">24</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -704,7 +712,7 @@
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">12k</span>
+    <span title="Site words total count">15.5k</span>
   
 </div>
 
