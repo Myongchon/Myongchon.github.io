@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[主要作品集]]></title>
+    <url>%2F2019%2F09%2F07%2F%E4%B8%BB%E8%A6%81%E4%BD%9C%E5%93%81%E9%9B%86%2F</url>
+    <content type="text"><![CDATA[###前言本文所展示的项目和作品大多用于实际工作和研究，由于版权问题并未能将所有内容都予以展示，望见谅 #####主要作品集(提取:3ty8)链接：https://pan.baidu.com/s/1Qn9HbPHaYdYaAB9PsNGA-g Demo1链接:https://pan.baidu.com/s/1p1g3oFPS0p0e9aE3rx-wjA这个项目是实习时所做的工作，我负责公司网站部分模块前端设计与开发 Demo2链接:这是全国国土空间规划图件处理的项目，我负责地图设计以及批量制图工具的开发（开发工具不涉及前端和设计，故此处不展示）https://pan.baidu.com/s/10xyZiqFhs2Zf_--Uu76kfg Demo3链接:https://pan.baidu.com/s/1dCOAFoYSe6pfTwdnnD-5yQ此作品是内河航道的可视化展示，我负责前端开发的一些工作]]></content>
+      <categories>
+        <category>项目总结</category>
+      </categories>
+  </entry>
+  <entry>
     <title><![CDATA[js实现轮播图]]></title>
     <url>%2F2019%2F08%2F31%2Fjs%E5%AE%9E%E7%8E%B0%E8%BD%AE%E6%92%AD%E5%9B%BE%2F</url>
     <content type="text"><![CDATA[本文部分参考手把手原生js简单轮播图轮播图的原理： 一系列的大小相等的图片平铺，利用CSS布局只显示一张图片，其余隐藏。通过计算偏移量利用定时器实现自动播放，或通过手动点击事件切换图片。 See the Pen 轮播图 by Myongchon_Lau (@myongchon)on CodePen. 相关阅读 Vue轮播图的实现以及其与jQuery轮播图的简单对比]]></content>
